@@ -1,10 +1,16 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Frames</title>
-<frameset rows="10%,*" noresize="no" >
-<frame src="./details.html">
-<frameset cols="15%,*" noresize="no">
-<frame src="./images.html" target="right">
-<frame src="./show.html" name="side" >
-</frameset>
-</frameset>
+   <head>
+      <title>Frames</title>
+   </head>
+   <frameset rows = "10%,*">
+      <frame name = "top" src = "./details.html" />
+      <frameset cols = "15%,*">
+        <frame name = "left" src = "./images.html" />
+        <frame name = "right" src = "./show.html" />
+      </frameset>
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+   </frameset>
+</html>
